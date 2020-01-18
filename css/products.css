@@ -1,0 +1,80 @@
+/*=========================================
+*            product-container            *
+=========================================*/
+
+.products-container {
+    padding: 5rem 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+.product-card {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 300ms;
+    padding: 3rem;
+}
+
+.card-1 {
+    background: url('https://www.midorinoshima.com/2493/sake-dassai-45.jpg');
+    background-size:cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.card-2 {
+    background: url('https://cdn.shopify.com/s/files/1/0079/8631/5323/products/28237_hakutsuru_sayuri.jpg?v=1561597175');
+    background-size:cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.card-3 {
+    background: url('https://assets.katomcdn.com/q_auto,f_auto/products/284/284-CHOPSTICKSBK/284-chopsticksbk.jpg');
+    background-size:cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.card-4 {
+    background: url('https://m.media-amazon.com/images/I/A1ntnF3PJOL._CLa%7C2140,2000%7C61jgg43cOVL.png%7C0,0,2140,2000+0.0,0.0,2140.0,2000.0.png');
+    background-size:cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.product-img {
+    height: 50%;
+    align-self: center;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-description {
+    margin-bottom: 1rem;
+    width: 30%;
+}
+
+.product-button {
+    padding: 1rem 2rem;
+    color: #222;
+    text-decoration: none;
+    background: none;
+    border: 1px solid #222;
+    transition: all 300ms;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.product-button:hover {
+    background: #222;
+    color: #fff;
+}
