@@ -13,3 +13,35 @@
     margin-top: 15rem;
     font-size: 2rem;
 }
+
+
+.cart-card {
+    width: 50%;
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+    justify-content: space-between;
+}
+
+.cart-quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cart-quantity-selector i {
+    padding: .5rem;
+}
+
+.cart-quantity-selector i:hover {
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cart-quantity {
+    margin: 0 .5rem;
+    font-weight: 600;
+}
+
+

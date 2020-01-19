@@ -9,7 +9,66 @@
 body {
     background: #fff;
     color: #222;
+    overflow-x: hidden;
 }
+
+.main-content {
+    opacity: 0;
+    animation-name: isActive;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+}
+
+@keyframes isActive {
+    from {
+        opacity: 0;
+        font-size: 3rem;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*======================================
+*            loading screen            *
+======================================*/
+
+#loading-container {
+    height: 100vh;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: -100; */
+}
+
+#loading-percent {
+    font-size: 2.5rem;
+}
+
+.percent-grow {
+    font-size: 3rem;
+    animation-name: percentGrow;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes percentGrow {
+    from {
+        font-size: 3rem;
+    }
+    to {
+        font-size: 1500rem;
+    }
+}
+
 
 /*==============================
 *            header            *
@@ -141,6 +200,8 @@ header:hover .header-nav-link:hover {
     padding: 1rem 2rem;
     border: 1px #222 solid;
     transition: all 300ms;
+    color: #222;
+    text-decoration: none;
 }
 
 
